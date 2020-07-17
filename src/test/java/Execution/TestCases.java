@@ -7,23 +7,28 @@ import org.testng.annotations.Test;
 
 import Base.AppDriver;
 import Pages.ContactUs;
+import Utility.NavigateUrl;
 import Utility.Verifylinks;
 
 public class TestCases extends AppDriver
 {
-      @Test(priority = 1)
+      @Test(priority = 0)
       public void verifylinks() throws IOException, InterruptedException
       {
     	  Verifylinks obj = new Verifylinks();
+    	  NavigateUrl nuobj = new NavigateUrl();
     	  try {
     	  obj.linktest();
+    	  
     	  }
     	  catch(Exception e)
     	  {
     		  
     	  }
+    	  nuobj.openurl();
+    	  
       }
-      @Test(priority = 0)
+      /*@Test(priority = 1)
       public void verifyContact() throws InterruptedException
       {
     	  ContactUs con = new ContactUs();
@@ -35,5 +40,5 @@ public class TestCases extends AppDriver
     	  con.clicksubmit();
     	  con.getmsg();
     	  con.navigatehome();
-      }
+      }*/
 }

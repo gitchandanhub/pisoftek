@@ -74,7 +74,7 @@ public class AppDriver
 	          }
 	          driver.manage().window().maximize();
 	          driver.manage().timeouts().implicitlyWait(wait.Implicitwait, TimeUnit.SECONDS);
-	          driver.navigate().to(config.getProperty("Url"));
+	          driver.navigate().to(config.getProperty("Url1"));
 	          Thread.sleep(3000);
 	      }
 	      
